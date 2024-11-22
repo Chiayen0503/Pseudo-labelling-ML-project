@@ -1,4 +1,4 @@
-Setup
+# Setup
 1. It is recommanded to install two separate virtual environments for ```sam2``` and ```yolov7``` 
   * For ```sam2/```, pip install pytorch first (do check compatible cuda version) before ```pip install -e ".[demo]" ```
   * For ```yolov7/```, ```pip install -r requirements.txt```
