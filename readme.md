@@ -6,6 +6,6 @@ Setup
 2. Visit ```sam2/``` and run notebooks
 3. Visit ```yolov7``` and run notebooks
 
-Here is our benchmark, after 2 rounds of 20 epochs with only 400-600 training images.
+Here is our benchmark, after 2 rounds of 20 epochs with only 400-600 training images, test/val 85 images each
 
 ![image info](./benchmark.png)
