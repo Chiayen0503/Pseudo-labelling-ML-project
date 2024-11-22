@@ -1,0 +1,9 @@
+train: custom_data/train_val_test/images/train/ 
+val:  custom_data/train_val_test/images/val/
+test: custom_data/train_val_test/images/test/
+
+# number of classes
+nc: 1
+
+# class names
+names: ["football"]
