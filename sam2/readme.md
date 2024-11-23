@@ -6,7 +6,7 @@ Setup
 * (4) label.py
 2. place association_football_4.mp4 in ```sam2/notebooks/videos/```, can be downloaded from [link](https://drive.google.com/file/d/19scg1agNwHK8WgZL9Ewm7OhMn390t241/view?usp=share_link)
 2. run 1.(1) to generate video frames
-3. create a ```test/``` folder under ```images/association_football_4/
+3. create a ```test/``` folder under ```images/association_football_4/```
 4. place ```vid_*/``` under ```images/association_football_4/test/```, can be downloaded from [link](https://drive.google.com/file/d/1wGhOzX4ABe5JGcdmNlV-FGLWGTFClC7i/view?usp=share_link)
 
 5. run 1.(2) to create yolov7 dataset using labelling tool 1.(4)
