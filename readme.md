@@ -1,3 +1,16 @@
+# Machine Learning: Video Object Detection
+*	Objective: Detect sports balls in video footage.
+*	Instructions: </br>
+ &nbsp; &nbsp; - Generate pseudo-annotations for video data. </br>
+ &nbsp; &nbsp; -	Build an object detection pipeline that can train on your annotations. </br>
+ &nbsp; &nbsp; -	Create an evaluation procedure with visualizations of predictions and annotations. </br>
+&nbsp; &nbsp; -	Design a process to iteratively improve your dataset. </br>
+*	Dataset: Sports-1M
+*	This task is perfect for showcasing your computer vision and machine learning skills, especially if you’re creative with your annotations and improvement pipeline!
+
+
+
+
 # Setup
 1. It is recommanded to install two separate virtual environments for ```sam2``` and ```yolov7```, please ```git clone https://github.com/facebookresearch/sam2.git``` and ```git clone https://github.com/WongKinYiu/yolov7.git```  
   * For ```sam2/```, pip install pytorch first (do check compatible cuda version) before ```pip install -e ".[demo]" ```
@@ -7,6 +20,10 @@
 4. Visit ```sam2/``` and run notebooks
 5. Visit ```yolov7``` and run notebooks
 
-Here is our benchmark, after 2 rounds of 20 epochs with only 400-600 training images, test/val 85 images each
+# Results
+After train on Yolov7 for 2 rounds of 20 epochs with only 400-600 training images, test/val 85 images, the results are shown in the following table. Here is [first-run weights](https://drive.google.com/file/d/1H4Gx4jdSfm66llZ_zbhwXGPDCsLWFxTi/view?usp=share_link) and [second-run weights](https://drive.google.com/file/d/1I2Uquwq9r8KcXeTApl5AOSStKTGdvCoG/view?usp=share_link).
 
-![image info](./benchmark.png)
+| run | P     | R     | mAP@.5 | mAP@.5:.95 | mean conf | detected |
+|-----|-------|-------|--------|------------|-----------|----------|
+| 1   | 0.918 | 0.918 | 0.932  | 0.698      | 0.31      | 28       |
+| 2   | 0.962 | 0.905 | 0.947  | 0.788      | 0.62      | 84       |
